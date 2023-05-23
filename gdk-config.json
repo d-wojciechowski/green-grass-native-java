@@ -1,0 +1,22 @@
+{
+  "component": {
+    "com.dwojciechowski.Component": {
+      "author": "Dominik Wojciechowski",
+      "version": "1.0.0",
+      "build": {
+        "build_system": "custom",
+        "custom_build_command": [
+          "bash",
+          "./native_build.sh",
+          "com.dwojciechowski.Component",
+          "1.0.0"
+        ]
+      },
+      "publish": {
+        "bucket": "<PLACEHOLDER_BUCKET>",
+        "region": "eu-west-1"
+      }
+    }
+  },
+  "gdk_version": "1.0.0"
+}

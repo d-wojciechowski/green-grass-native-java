@@ -1,0 +1,5 @@
+.gradle
+.idea
+build
+custom-build
+greengrass-build
