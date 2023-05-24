@@ -2,6 +2,7 @@ plugins {
     kotlin("jvm") version "1.8.21"
     id("org.graalvm.buildtools.native") version "0.9.22"
     id("com.adarshr.test-logger") version "3.2.0"
+    id("com.github.johnrengelman.shadow") version "7.1.2"
 
     application
 }
