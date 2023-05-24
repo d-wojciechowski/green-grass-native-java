@@ -2,14 +2,14 @@
   "component": {
     "com.dwojciechowski.Component": {
       "author": "Dominik Wojciechowski",
-      "version": "1.0.5",
+      "version": "1.0.6",
       "build": {
         "build_system": "custom",
         "custom_build_command": [
           "bash",
           "./native_build.sh",
           "com.dwojciechowski.Component",
-          "1.0.5"
+          "1.0.6"
         ]
       },
       "publish": {
