@@ -10,7 +10,7 @@ ComponentConfiguration:
 Manifests:
   - Platform:
       os: linux
-      arch: aarch64
+      architecture: aarch64
     Artifacts:
       - URI: "s3://BUCKET_NAME/COMPONENT_NAME/COMPONENT_VERSION/COMPONENT_NAME.zip"
         Unarchive: "ZIP"
