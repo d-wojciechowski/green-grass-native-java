@@ -2,18 +2,18 @@
   "component": {
     "com.dwojciechowski.Component": {
       "author": "Dominik Wojciechowski",
-      "version": "1.0.0",
+      "version": "1.0.5",
       "build": {
         "build_system": "custom",
         "custom_build_command": [
           "bash",
           "./native_build.sh",
           "com.dwojciechowski.Component",
-          "1.0.0"
+          "1.0.5"
         ]
       },
       "publish": {
-        "bucket": "<PLACEHOLDER_BUCKET>",
+        "bucket": "native-component-java",
         "region": "eu-west-1"
       }
     }

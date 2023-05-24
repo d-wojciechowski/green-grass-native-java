@@ -1,16 +1,19 @@
 ---
 RecipeFormatVersion: "2020-01-25"
-ComponentName: "{COMPONENT_NAME}"
-ComponentVersion: "{COMPONENT_VERSION}"
+ComponentName: "COMPONENT_NAME"
+ComponentVersion: "COMPONENT_VERSION"
 ComponentDescription: "This is simple Hello World component written in Native Java."
-ComponentPublisher: "{COMPONENT_AUTHOR}"
+ComponentPublisher: "COMPONENT_AUTHOR"
 ComponentConfiguration:
   DefaultConfiguration:
     Message: "World"
 Manifests:
   - Platform:
-      os: all
+      os: linux
+      arch: aarch64
     Artifacts:
-      - URI: "s3://BUCKET_NAME/COMPONENT_NAME/COMPONENT_VERSION/HelloWorld-1.0.0.jar"
+      - URI: "s3://BUCKET_NAME/COMPONENT_NAME/COMPONENT_VERSION/COMPONENT_NAME.zip"
+        Unarchive: "ZIP"
     Lifecycle:
-      Run: "{artifacts:path}/application {configuration:/Message}"
+      Install: "chmod +x {artifacts:decompressedPath}/COMPONENT_NAME/application"
+      Run: "{artifacts:decompressedPath}/COMPONENT_NAME/application {configuration:/Message}"
